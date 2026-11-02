@@ -53,7 +53,7 @@ The node sends the requested queries, country filters, slice filters and company
 
 ## Development
 
-Use Node.js 22 or later. Run `npm ci`, `npm run lint`, `npm run build` and `npm test`. Use `npm run dev` to test the node in n8n. Publishing must use the supplied GitHub Actions workflow with npm provenance before requesting n8n verification.
+Use Node.js 24 and npm 11.9.0 for development. Run `npm ci`, `npm run lint`, `npm run build` and `npm test`. Use `npm run dev` to test the node in n8n. Publishing must use the supplied GitHub Actions workflow with npm provenance before requesting n8n verification.
 
 ## Support
 
