@@ -1,0 +1,66 @@
+{
+  "name": "n8n-nodes-veilstrat",
+  "version": "0.1.0",
+  "description": "VeilStrat company funding, AI hiring, and technology-adoption research for n8n",
+  "license": "MIT",
+  "homepage": "https://www.veilstrat.com/",
+  "keywords": [
+    "n8n-community-node-package",
+    "veilstrat",
+    "company-research",
+    "sales-intelligence",
+    "funding",
+    "ai-hiring"
+  ],
+  "author": {
+    "name": "VeilStrat",
+    "email": "support@veilstrat.com",
+    "url": "https://www.veilstrat.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kprojectship/n8n-nodes-veilstrat.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "files": [
+    "dist/credentials",
+    "dist/nodes",
+    "examples",
+    "LICENSE"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/VeilstratApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Veilstrat/Veilstrat.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "0.55.4",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^21.1.0",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/kprojectship/n8n-nodes-veilstrat/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

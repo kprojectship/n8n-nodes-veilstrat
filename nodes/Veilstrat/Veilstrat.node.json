@@ -1,0 +1,21 @@
+{
+	"node": "n8n-nodes-veilstrat.veilstrat",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Sales", "Marketing & Content"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://app.veilstrat.com/docs/api"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://www.veilstrat.com/developers"
+			},
+			{
+				"url": "https://app.veilstrat.com/docs/api/endpoints"
+			}
+		]
+	}
+}

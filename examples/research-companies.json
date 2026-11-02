@@ -1,0 +1,52 @@
+{
+  "name": "VeilStrat company research",
+  "nodes": [
+    {
+      "id": "manual-start",
+      "name": "Start research",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "company-search",
+      "name": "Search companies",
+      "type": "n8n-nodes-veilstrat.veilstrat",
+      "typeVersion": 1,
+      "position": [
+        260,
+        0
+      ],
+      "parameters": {
+        "resource": "company",
+        "operation": "search",
+        "signalQuery": "signal:hiring:30d",
+        "countries": "US",
+        "page": 1,
+        "pageSize": 10
+      }
+    }
+  ],
+  "connections": {
+    "Start research": {
+      "main": [
+        [
+          {
+            "node": "Search companies",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "pinData": {}
+}
